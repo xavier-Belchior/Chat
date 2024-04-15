@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Group of chat</title>
+  </head>
+  <body>
+    <h1 class="title">Ichat 😁</h1>
+    <div class="main">
+      <div class="name">
+        <span><i class="fa fa-user"></i></span>
+        <input
+          type="text"
+          name="name-input"
+          class="name-input"
+          id="name-input"
+          value="anonymous"
+          maxlength="20"
+        />
+      </div>
+      <ul class="message-container" id="message-container">
+        <li class="message-left">
+          <p class="message">
+            Lorem ipsum dolor sit
+            <span>bluebird ◽ 14 april 2024</span>
+          </p>
+        </li>
+        <li class="message-right">
+          <p class="message">
+            Lorem ipsum dolor sit
+            <span>bluebird ◽ 14 april 2024</span>
+          </p>
+        </li>
+        <li class="message-feedback">
+          <p class="feedback" id="feedback">Stranger is typing a message</p>
+        </li>
+      </ul>
+
+      <form action="" class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">
+          send<span><i class="fa fa-paper-plane"></i></span>
+        </button>
+      </form>
+      <!-- <h3 class="clients-total" id="clients-total">Total clients:20</h3> -->
+    </div>
+    <h3 class="clients-total" id="clients-total">Total clients:20</h3>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+      integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
